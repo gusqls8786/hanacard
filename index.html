@@ -10,10 +10,26 @@
 
     <!-- open graph(오픈 그래프) -->
     <meta property = "og:type" content="wevsite">
-    <meta property = "og:url" content="">
+    <meta property = "og:url" content="https://binnyhanacard.netlify.app/">
     <meta property = "og:title" content="내가만든 하나카드">
     <meta property = "og:description" content="하나카드 사이트 연습">
     <meta property = "og:image" content="img/favicon/favicon-96x96.png">
+
+    <!-- 조건에 해당할때는 실행함 -->
+    <!-- html 5 태그는 구 internet exploer ver.6,7,8에서는 인식하지 못하는
+    태그들 ex). 시멘틱 태그를 javascript를 사용하여 html 5 태그를 인식할수 있도록 html 5shiv를 설정한다 -->
+    <!-- 조건부 주석문 -->
+    <!-- [if lt IE 7]>
+    <script>
+        alert("Please Upgrade Your BROWSER!!")
+    </script>
+    <![endif] -->
+
+
+    <!-- [if lt IE 9]>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+
+    <![endif] -->
 </head>
 <body>
     <h1>하나카드</h1>
