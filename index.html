@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>하나카드</title>
+   
+    <!-- css 연결 -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- 하나 폰트 연결 -->
     <link rel="stylesheet" href="./css/font/stylesheet.css">
 
     <!-- open graph(오픈 그래프) -->
@@ -14,6 +17,17 @@
     <meta property = "og:title" content="내가만든 하나카드">
     <meta property = "og:description" content="하나카드 사이트 연습">
     <meta property = "og:image" content="img/favicon/favicon-96x96.png">
+    <!-- 
+        og == open graph  
+    오픈 그래프의 속성을 이용해서 더 많은 정보를 입력할수 있다
+    og:type => 페이지의 유형(웹사이트, 비디오)
+    og:url => 페이지의 주소(서버주소)
+    og:title => 페이지의 이름(제목) 
+    og:description => 페이지의 간단한 설명
+    og:image => 페이지의 대표 이미지-->
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
 
     <!-- 조건에 해당할때는 실행함 -->
     <!-- html 5 태그는 구 internet exploer ver.6,7,8에서는 인식하지 못하는
@@ -30,8 +44,248 @@
            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 
     <![endif] -->
+    
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./img/favicon/favicon-16x16.png">
+
 </head>
 <body>
-    <h1>하나카드</h1>
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <div class="header clearfix">
+                    <ul class="list_1">
+                        <li class="green">
+                            <a href="#">개인</a>
+                        </li>
+
+                        <li>
+                            <a href="#">기업</a>
+                        </li>
+
+                        <li>
+                            <a href="#">가맹점</a>
+                        </li>
+                    </ul>
+
+                    <ul class="list_2">
+                        <li class="log">
+                            <a href="#">로그인</a>
+                        </li>
+
+                        <li>
+                            <a href="#">상품공시실</a>
+                        </li>
+
+                        <li>
+                            <a href="#">금융소비보호</a>
+                        </li>
+
+                        <li>
+                            <a href="#">English</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+
+        <div id="banner">
+            <div class="container">
+                <div class="ban_left">
+                    <div class="obj">
+                        <p class="ob ob1">
+                            <img src="./img/ev49_obj_01.png" alt="구름1">
+                        </p>
+
+                        <p class="ob ob2">
+                            <img src="./img/ev49_obj_02.png" alt="구름2">
+                        </p>
+
+                        <p class="ob ob3">
+                            <img src="./img/ev49_obj_03.png" alt="달력">
+                        </p>
+
+                        <p class="ob ob3_1">
+                            <img src="./img/ev43_obj_02.png" alt="쇼핑할땐">
+                        </p>
+
+                        <p class="ob ob3_2">
+                            <img src="./img/ev43_obj_03.png" alt="타이틀">
+                        </p>
+
+                        <p class="ob ob3_3">
+                            <img src="./img/ev43_obj_04.png" alt="1">
+                        </p>
+
+                        <p class="ob ob3_4">
+                            <img src="./img/ev43_obj_04.png" alt="1">
+                        </p>
+
+                        <p class="ob ob4">
+                            <img src="./img/ev49_obj_04.png" alt="우산">
+                        </p>
+
+                        <p class="ob ob5">
+                            <img src="./img/ev49_obj_05.png" alt="슈트케이스">
+                        </p>
+
+                        <p class="ob ob6">
+                            <img src="./img/ev49_obj_06.png" alt="자동차">
+                        </p>
+
+                        <p class="ob ob7">
+                            <img src="./img/ev49_obj_07.png" alt="선물">
+                        </p>
+
+                        <p class="ob ob8">
+                            <img src="./img/ev49_obj_08.png" alt="박스">
+                        </p>
+
+                        <p class="ob ob9">
+                            <img src="./img/ev49_obj_09.png" alt="가방">
+                        </p>
+
+                        <p class="ob ob10">
+                            <img src="./img/ev49_obj_10.png" alt="바람1">
+                        </p>
+
+                        <p class="ob ob11">
+                            <img src="./img/ev49_obj_11.png" alt="바람2">
+                        </p>
+
+                        <p class="ob ob12">
+                            <img src="./img/ev49_obj_12.png" alt="원">
+                        </p>
+
+                        <p class="ob ob13">
+                            <img src="./img/ev49_obj_13.png" alt="서프라이즈">
+                        </p>
+                    </div>
+                </div>
+                <div class="ban_right">
+                    <div class="br_tit">
+                        <h3>VIVA G platinum <br>체크카드</h3>
+                        <p>홈페이지/모바일웹에서 카드를 최초로
+                            발급하시면 <br><strong>연회비 100% 캐쉬백</strong>
+                        </p>
+                        <div class="login_btn">
+                            <ul>
+                                <li class="login_btn_1">
+                                    <a href="#">로그인</a>
+                                </li>
+
+                                <li class="login_btn_2">
+                                    <a href="#">회원가입</a>
+                                </li>
+                                
+                            </ul>
+                        </div> 
+                    </div>
+                    <div class="br_btn">
+                        <ul>
+                            <li><a href="#">이용대금 명세서</a></li>
+                            <li><a href="#">결제예정금액</a></li>
+                            <li><a href="#">카드이용금액</a></li>
+                            <li><a href="#">한도상향</a></li>
+                        </ul>
+                    </div>
+                </div> <!-- ban_right end -->
+            </div>
+        </div>
+        <!-- banner end -->
+
+        <div id="contents">
+            <div id="cont_1">
+                <div class="container">
+                    <div id="nav">
+                        <ul class="gnb">
+                            <!-- 메인메뉴, GNB(global navigation bar) -->
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">카드</a></li>
+                            <li><a href="#">금융</a></li>
+                            <li><a href="#">라이프</a></li>
+                            <li><a href="#">모바일</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                        <ul class="gnb_right">
+                            <li class="gnb_right_1">
+                                <a href="#">간편서비스</a>
+                            </li>
+                            
+                            <li class="gnb_right_2">
+                                <a href="#">전체메뉴 <i class="fas fa-bars"></i></a>
+                            </li>
+                        </ul>
+                        <a href="#" class="gnb_search">
+                            <span class="ir">통합검색</span>
+                            <i class="ir">레이어팝업 열림</i>
+                        </a>
+
+                        <a href="#" class="gnb_event">
+                            Event <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+
+                    <div id="card" class="clearfix">
+                        <div class="card_img">
+                            <h4>추천카드</h4>
+                            <div class="card_banner">
+                                <ul class="clearfix">
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/card01.png" alt="카드01">
+                                            <em>국내외 전 가맹점 0.7%</em>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/card02.png" alt="카드02">
+                                            <em>SK텔레콤 2천~1만5천</em>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/card03.png" alt="카드03">
+                                            <em>온라인 쇼핑/마트 주중</em>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div><!-- card_banner end -->
+                            <div class="card_link clearfix" >
+                                <ul>
+                                    <li><a href="#">카드발급조회</a></li>
+                                    <li><a href="#">카드사용등록</a></li>
+                                    <li><a href="#">분실도난</a></li>
+                                    <li><a href="#">카드비밀번호 등록/변경</a></li>
+                                </ul>
+                                
+                            </div>
+
+                                    <a href="#" class="cardmore_btn ir">추천카드</a>
+                        </div> <!-- card_img end -->
+                        <div class="card_desc">
+                            <dl>
+                                <dt>원하는 365 언제나</dt>
+                                <dd class="cd1">이번달, 지출증가 <br>
+                                쉽고 편리하게 대출을 받을수 있을까</dd>
+
+                                <dd class="cd2">
+                                    <ul>
+                                        <li><a href="#">단기카드대출</a></li>
+                                        <li><a href="#">장기카드대출</a></li>
+                                        <li><a href="#"></a>일부결제금액이월약정</li> 
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div> <!-- card_desc end -->
+                    </div><!-- card end -->  
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
