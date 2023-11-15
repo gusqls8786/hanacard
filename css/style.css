@@ -4,7 +4,6 @@
 font-family: 'Noto Sans KR', sans-serif; */
 @import url(./reset.css);
 
-
 /* 전체 레이아웃 */
 #wrap
 {
@@ -569,18 +568,228 @@ font-family: 'Noto Sans KR', sans-serif; */
 {
     
 }
+
 #card .card_desc dl dd.cd2 ul
 {
     
 }
+
 #card .card_desc dl dd.cd2 ul li 
 {
+    display: inline;
+}
+
+#card .card_desc dl dd.cd2 ul li a
+{
+    display: inline-block;
+    background-color: #fff;
+    padding: 8px 30px;
+    transition: 0.3s;
+    border: 1px solid white;
+}
+
+#card .card_desc dl dd.cd2 ul li a:hover
+{
+    border: 1px solid #ddd;
+}
+
+/* event */
+#event
+{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#event>div
+{
+    float: left;
+}
+
+#event .event_box_1
+{
+
+}
+
+.event_box_1>div
+{
+    width: 300px;
+    height: 188px;
+    box-sizing: border-box;
+    padding-top: 110px;
+}
+
+#event .event_box_1 .eb_desc
+{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#event .event_box_1 .eb_tit
+{
+    font-size: 20px;
     
 }
-#card .card_desc dl dd.cd2 ul li a
+
+#event .event_box_1 .eb_banner_1
+{
+    background: #01937f url(../img/event_icon1.png) no-repeat center 25px;
+}
+
+#event .event_box_1 .eb_banner_2
+{
+    background: #766E9C url(../img/event_icon2.png) no-repeat center 25px;
+}
+
+#event .event_box_1 .eb_banner_3
+{
+    background: #43587d url(../img/event_icon3.png) no-repeat center 25px;
+}
+
+#event .event_box_2
+{
+    position: relative;
+    width: 600px;
+    height: 376px;
+    background: white;
+}
+
+.event_box_2 .eb_icon
+{
+    position: absolute;
+    left: 60px;
+    top: 60px;
+    z-index: 20;
+}
+
+.event_box_2 .eb_icon ul
+{
+
+}
+
+.event_box_2 .eb_icon ul li
+{
+    float: left;
+}
+
+.event_box_2 .eb_icon ul li a
+{
+    display: block;
+    font-size: 13px;
+    padding: 3px 12px;
+}
+
+.event_box_2 .eb_icon ul li.ei_1
+{
+    margin-right: 8px;
+}
+
+.event_box_2 .eb_icon ul li.ei_1 a
+{
+    background: #00907f;
+    color: white;
+    border: 1px solid #00907f;
+    transition: 0.3s;
+}
+
+.event_box_2 .eb_icon ul li.ei_1 a:hover
+{
+    background: #007668;
+    border-color: #007668;
+}
+
+.event_box_2 .eb_icon ul li.ei_2 a
+{
+    border: 1px solid #ccc;
+    color: black;
+    transition: 0.3s;
+}
+.event_box_2 .eb_icon ul li.ei_2 a:hover
+{
+    border-color: black;
+    color: black;
+}
+.event_box_2 .eb_icon ul li a i
+{
+    padding-left: 8px;
+}
+
+.event_box_2 .eb_slider
+{
+
+}
+
+.eb_slider_list
 {
     
 }
+
+.eb_slider_list .slick-dots
+{
+    position: absolute;
+    right: 40px;
+    top: 50px;
+}
+
+.eb_slider_list .slick-dots li
+{
+    float: left;
+    margin-right: 10px;
+}
+
+.eb_slider_list .slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.eb_slider_list .slick-dots li.slick-active button
+{
+    background-color: #d75e7e;
+}
+
+/* 정지 재생버튼 */
+.event_box_2 .page_act
+{
+    
+    font-size: 0;
+    position: absolute;
+    right: 122px;
+    top: 60px;
+}
+
+.event_box_2 .page_act .btn_stop
+{
+    display: none; 
+    width: 8px;
+    height: 8px;
+    background: url(../img/btn_banner_stop.png) no-repeat;
+}
+
+.event_box_2 .page_act .btn_play
+{
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: url(../img/btn_banner_play.png) no-repeat;
+}
+
+.event_box_2 .page_act.on .btn_stop
+{
+    display: block;
+
+}
+
+.event_box_2 .page_act.on .btn_play
+{
+    display: none;
+}
+
 
 
 /* banner */

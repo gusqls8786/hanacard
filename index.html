@@ -6,8 +6,10 @@
     <title>하나카드</title>
    
     <!-- css 연결 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+
     <!-- 하나 폰트 연결 -->
     <link rel="stylesheet" href="./css/font/stylesheet.css">
 
@@ -50,6 +52,11 @@
 
 </head>
 <body>
+    <div class="scroll">
+        <div><a href="#header">header</a></div>
+        <div><a href="#banner">banner</a></div>
+        <div><a href="#contents">contents</a></div>
+    </div>
     <div id="wrap">
         <header id="header">
             <div class="container">
@@ -270,22 +277,105 @@
                         <div class="card_desc">
                             <dl>
                                 <dt>원하는 365 언제나</dt>
-                                <dd class="cd1">이번달, 지출증가 <br>
+                                <dd class="cd1"> 이번달, 지출증가 <br>
                                 쉽고 편리하게 대출을 받을수 있을까</dd>
 
                                 <dd class="cd2">
                                     <ul>
                                         <li><a href="#">단기카드대출</a></li>
                                         <li><a href="#">장기카드대출</a></li>
-                                        <li><a href="#"></a>일부결제금액이월약정</li> 
+                                        <li><a href="#">일부결제금액이월약정</a></li> 
                                     </ul>
                                 </dd>
                             </dl>
                         </div> <!-- card_desc end -->
-                    </div><!-- card end -->  
+                    </div><!-- card end --> 
+                    
+                    <div id="event" class="clearfix">
+                        <div class="event_box_1">
+                            <div class="eb_banner_1">
+                                <p class="eb_desc">원하는 정보와 쌓이는 혜택</p>
+                                <h4 class="eb_tit">웹 회원가입</h4>
+                            </div> <!-- eb_banner_1 end -->
+                            <div class="eb_banner_2">
+                                <p class="eb_desc">유용한 정보를 미리 준비하세요!</p>
+                                <h4 class="eb_tit">해외 이용 가이드</h4>
+                            </div> <!-- eb_banner_2 end -->
+                            <div class="eb_banner_3">
+                                <p class="eb_desc">특별한 혜택을 누리세요</p>
+                                <h4 class="eb_tit">VIP Service</h4>
+                            </div> <!-- eb_banner_3 end -->
+                        </div> <!-- event_box_1 end -->
+
+                        <div class="event_box_2">
+                            <div class="eb_banner_4">
+                                <div class="eb_icon">
+                                    <ul class="clearfix">
+                                        <li class="ei_1">
+                                            <a href="#" title="새창열기">Event <i class="fas fa-plus"></i></a>
+                                        </li>
+
+                                        <li class="ei_2">
+                                            <a href="#" title="새창열기">당첨자 확인</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="eb_slider">
+                                    
+                                    <div class="eb_slider_list">
+                                        <div>
+                                            <img src="https://www.hanacard.co.kr/ATTACH/NEW_HOMEPAGE/images/banner/carousel/img_mc_event_pc7545.png" 
+                                            class="img_alt"
+                                            alt="G.Lab 라운지 여행갈 때 꼭 챙기는 공항서비스 2023.01.01 ~ 2023.12.31">
+                                        </div>
+
+                                        <div>
+                                            <img src="https://www.hanacard.co.kr/ATTACH/NEW_HOMEPAGE/images/banner/carousel/img_mc_event_7000_1.png" 
+                                            class="img_alt" 
+                                            alt="여행 혜택 연말엔 해외여행 할인 받고 나도 간다! 2023.10.05 ~ 2023.11.30">
+                                        </div>
+
+                                        <div>
+                                            <img src="https://www.hanacard.co.kr/ATTACH/NEW_HOMEPAGE/images/banner/carousel/img_mc_event_pc6989.png" 
+                                            class="img_alt" 
+                                            alt="G.Lab 라운지 여행갈 때 꼭 챙기는 공항서비스 2023.01.01 ~ 2023.12.31">
+                                        </div>
+
+                                        <div>
+                                            <img src="https://www.hanacard.co.kr/ATTACH/NEW_HOMEPAGE/images/banner/carousel/img_mc_event_pc7177.png" 
+                                            class="img_alt" 
+                                            alt="무브(movv) 인천공항이동 최대 25% 할인 2023.07.03 ~ 2023.12.31">
+                                        </div>
+
+                                    </div> <!-- eb_slider_list end -->
+                                    <div class="page_act on">
+                                        <a href="#" class="btn_stop">배너정지</a>
+                                        <a href="#" class="btn_play">배너재생</a>
+                                    </div>
+                                
+                                </div>
+                            </div> <!-- eb_banner_4 end -->
+                            <div class="eb_banner_5">
+                                <h4>하나머니</h4>
+                                <ul class="money">
+                                    <li class="w100"><a href="#">하나머니 안내</a></li>
+                                    <li><a href="#">포인트 전환</a></li>
+                                    <li class="w100"><a href="#">포인트 기부</a></li>
+                                    <li><a href="#">이용약관/연회비 납부</a></li>
+                                </ul>
+                                <a href="#" class="point" title="새창열기">Point <i class="fas fa-plus"></i></a>
+                            </div> <!-- eb_banner_5 end -->
+                        </div> <!-- event_box_2 end -->
+                        <div class="event_box_3"></div> <!-- event_box_3 end -->
+                    </div>  <!-- event end --> 
                 </div>
             </div>
         </div>
     </div>
+     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" ></script>
+    <script src="./js/main.js"></script>
+    
+    
 </body>
 </html>
