@@ -33,6 +33,12 @@ font-family: 'Noto Sans KR', sans-serif; */
     height: 940px;
 }
 
+#cont_2
+{
+    height: 555px;
+    background-color: #efefef;
+}
+
 /* 중심영역 */
 .container
 {
@@ -756,14 +762,17 @@ font-family: 'Noto Sans KR', sans-serif; */
 /* 정지 재생버튼 */
 .event_box_2 .page_act
 {
-    
-    font-size: 0;
-    position: absolute;
     right: 122px;
     top: 60px;
 }
 
-.event_box_2 .page_act .btn_stop
+.page_act
+{
+    font-size: 0;
+    position: absolute;
+}
+ 
+.page_act .btn_stop
 {
     display: none; 
     width: 8px;
@@ -771,7 +780,7 @@ font-family: 'Noto Sans KR', sans-serif; */
     background: url(../img/btn_banner_stop.png) no-repeat;
 }
 
-.event_box_2 .page_act .btn_play
+.page_act .btn_play
 {
     display: block;
     width: 8px;
@@ -779,15 +788,221 @@ font-family: 'Noto Sans KR', sans-serif; */
     background: url(../img/btn_banner_play.png) no-repeat;
 }
 
-.event_box_2 .page_act.on .btn_stop
+.page_act.on .btn_stop
 {
     display: block;
 
 }
 
-.event_box_2 .page_act.on .btn_play
+.page_act.on .btn_play
 {
     display: none;
+}
+
+/* eb_banner_5 */
+
+.eb_banner_5
+{
+    background: #8cc7e9 url(../img/event_icon4.png) no-repeat 155px 60px;
+    height: 189px;
+    position: relative;
+    
+}
+
+.eb_banner_5 h4
+{
+    position: absolute;
+    left: 60px;
+    top: 60px;
+    font-family: 'Hana2.0 B';
+    color: black;
+    font-size: 20px;
+}
+
+.eb_banner_5 .money
+{
+    padding-left: 267px;
+    padding-top: 50px;
+}
+
+.eb_banner_5 .money li
+{
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 15px;
+}
+
+.eb_banner_5 .money li a
+{
+    display: block;
+    background-color: white;
+    width: 154px;
+    padding: 9px 0;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.eb_banner_5 .money li a:hover
+{
+    background-color: #f4f4f4;
+}
+
+.eb_banner_5 .money li.w100
+{
+    
+}
+
+.eb_banner_5 .money li.w100 a
+{
+    width: 100px;
+}
+
+.eb_banner_5 .point
+{
+    position: absolute;
+    left: 58px;
+    top: 29px;
+    background-color: #43587d;
+    color: white;
+    font-size: 13px;
+    border-radius: 2px;
+    padding: 3px 12px;
+}
+
+.eb_banner_5 .point i
+{
+    padding-left: 8px;
+}
+
+.event_box_3
+{
+    width: 300px;
+    height: 564px;
+    background-color: #d7567e;
+    color: white;
+    position: relative;
+}
+
+.event_box_3 h4
+{
+    font-size: 22px;
+    padding: 40px 9px;
+}
+
+.event_box_3 img
+{
+    display: inline;
+}
+
+.event_box_3 .slick-dots
+{
+
+}
+
+.event_box_3 .slick-dots li
+{
+    display: inline;
+    margin-right: 10px;
+}
+
+.event_box_3 .slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+    border: none;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.event_box_3 .slick-dots li.slick-active button
+{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.event_box_3 .page_act
+{
+   left: 102px;
+   top: 390px;
+
+}
+
+.event_box_3 p
+{
+    font-size: 16px;
+    margin: 35px 0 15px;
+}
+
+.event_box_3 .es2_btn
+{
+    background-color: white;
+    display: inline-block;
+    padding: 10px 50px;
+    border-radius: 3px;
+}
+
+/* life */
+#life
+{
+
+}
+
+#life .life_menu
+{
+
+}
+
+#life .life_menu ul
+{
+
+}
+
+#life .life_menu ul li
+{
+
+}
+
+#life .life_menu ul li a
+{
+
+}
+
+#life .life_style
+{
+
+}
+
+#life .life_style ul 
+{
+
+}
+
+#life .life_style ul li 
+{
+
+}
+
+#life .life_style ul li:nth-child(1)
+{
+    background: url(../img/mc_service_bg02.png);
+}
+
+#life .life_style ul li:nth-child(2)
+{
+    background: url(../img/mc_service_bg03.png);
+}
+
+#life .life_style ul li:nth-child(3)
+{
+    background: url(../img/mc_service_bg04.png);
+}
+
+#life .life_style ul li:nth-child(14)
+{
+    background: url(../img/mc_service_bg05.png);
 }
 
 

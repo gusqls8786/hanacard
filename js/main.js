@@ -32,3 +32,27 @@ $('.event_box_2 .page_act .btn_play').click(function(e){
     } 
 })
 
+$('.card').slick({
+    arrows:false,
+    autoplay:true,
+    dots:true,
+    pauseOnHover:false,
+  });
+
+  $('.event_box_3 .page_act .btn_stop').click(function(e){
+    e.preventDefault();
+    if($('.event_box_3 .page_act').hasClass('on')){
+        // on이라는 클래스명을 가지고있다면 true
+        // 없으면 false
+        $('.event_box_3 .page_act').removeClass('on');
+        $('.card').slick('slickPause');
+    }
+})
+
+$('.event_box_3 .page_act .btn_play').click(function(e){
+    e.preventDefault();
+    if(!$('.event_box_3 .page_act').hasClass('on')){
+      $('.event_box_3 .page_act').addClass('on')
+      $('.card').slick('slickPlay');
+    } 
+})
