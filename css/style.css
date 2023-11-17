@@ -947,12 +947,16 @@ font-family: 'Noto Sans KR', sans-serif; */
 /* life */
 #life
 {
-
+    position: relative;
+    height: 330px;
 }
 
 #life .life_menu
 {
-
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    z-index: 10;
 }
 
 #life .life_menu ul
@@ -962,12 +966,32 @@ font-family: 'Noto Sans KR', sans-serif; */
 
 #life .life_menu ul li
 {
+    float: left;
+    margin-right: 45px;
+}
 
+#life .life_menu ul li:last-child
+{
+    margin-right: 0;
 }
 
 #life .life_menu ul li a
 {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
 
+#life .life_menu ul li a:hover
+{
+    background-color: #cc3b63;
+    color: white;
 }
 
 #life .life_style
@@ -982,7 +1006,11 @@ font-family: 'Noto Sans KR', sans-serif; */
 
 #life .life_style ul li 
 {
-
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
 
 #life .life_style ul li:nth-child(1)
@@ -1000,11 +1028,151 @@ font-family: 'Noto Sans KR', sans-serif; */
     background: url(../img/mc_service_bg04.png);
 }
 
-#life .life_style ul li:nth-child(14)
+#life .life_style ul li:nth-child(4)
 {
     background: url(../img/mc_service_bg05.png);
 }
 
+#life .life_style ul li .text
+{
+
+}
+
+#life .life_style ul li .text a
+{
+    width: 50%;
+    display: block;
+    font-size: 50px;
+    padding: 60px 0 0 30px;
+}
+
+#life .life_style ul li .text a em
+{
+    font-size: 18px;
+    display: block;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.life_btn
+{
+    position: absolute;
+    width: 100%;
+    bottom: 53px;
+    left: 0;
+    text-align: center;
+    background-color: white;
+}
+
+.life_btn ul
+{
+
+}
+
+.life_btn ul li
+{
+    width: 16.6666%;
+    float: left;
+    position: relative;
+}
+
+.life_btn ul li::after
+{
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 1px;
+    height: 14px;
+    background-color: #ccc;
+}
+
+.life_btn ul li:first-child::after
+{
+    width: 0;
+}
+
+.life_btn ul li a
+{
+    display: block;
+    padding: 13px 0;
+    color: #333;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.life_btn ul li a:hover
+{
+    color: #00907f;
+}
+
+/* app */
+
+#app
+{
+
+}
+
+#app .app_left
+{
+    float: left;
+    width: 49%;
+    height: 200px;
+    background: white url(../img/mc_service_banner01_img.jpg) no-repeat;
+    background-position: 48px 45px;
+}
+
+#app .app_right
+{
+    float: right;
+    width: 50%;
+    height: 200px;
+    background: #ddd;
+}
+
+.app_left ul
+{
+    padding: 44px 0 0 280px;
+}
+
+.app_left ul li
+{
+    margin-right: 20px;
+    width: 48px;
+    height: 48px;
+    float: left;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+}
+
+.app_left ul li a
+{
+
+}
+
+.app_left ul li a img
+{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.app_left .app_left_text
+{
+
+}
+
+.app_left .app_left_text a
+{
+    font-size: 16px;
+    color: #666;
+}
+.app_left .app_left_text a strong
+{
+    display: block;
+    font-size: 20px;
+    color: black;
+    line-height: 34px;
+}
 
 
 /* banner */

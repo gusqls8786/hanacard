@@ -56,3 +56,15 @@ $('.event_box_3 .page_act .btn_play').click(function(e){
       $('.card').slick('slickPlay');
     } 
 })
+
+// life button
+
+let tab = $('.life_menu ul li')
+let menu = $('.life_style ul li')
+
+tab.mouseover(function(){
+  let target = $(this)
+  let index = target.index()
+  menu.css({opacity:0})
+  menu.eq(index).css({opacity:1})
+})
