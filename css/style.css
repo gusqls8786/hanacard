@@ -34,7 +34,7 @@ html {
 /* footer layout */
 #footer_notice{
     height: 71px; line-height: 71px;
-    background-color: #fff;
+    background-color: white;
     border-bottom: 1px solid #e6e6e6;
 }
 #footer_info{
