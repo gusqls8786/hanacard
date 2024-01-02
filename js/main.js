@@ -8,12 +8,9 @@
         fade:true,
     });
 
-    //정지/재생 버튼
-    // 선택자.addEventListerner('click',function(){})
-    // 선택자.onclick(function(){})
     $('.event_box2 .page_act .btn_stop').click(function(e){
         e.preventDefault();
-        if($('.event_box2 .page_act').hasClass('on')){//on이라는 클래스명을 가지고 있다면 tru, 없다면 false
+        if($('.event_box2 .page_act').hasClass('on')){
             $('.event_box2 .page_act').removeClass('on');
             eb_slider.slick('slickPause');
 
@@ -24,7 +21,6 @@
         e.preventDefault();
         if(!$('.event_box2 .page_act').hasClass('on')){
 
-            //! --> not   !! --> 긍정   
         $('.event_box2 .page_act').addClass('on');
         eb_slider.slick('slickPlay');
         }
@@ -40,12 +36,10 @@
       });
 
       
-    //정지/재생 버튼
-    // 선택자.addEventListerner('click',function(){})
-    // 선택자.onclick(function(){})
+
     $('.event_box3 .page_act .btn_stop').click(function(e){
         e.preventDefault();
-        if($('.event_box3 .page_act').hasClass('on')){//on이라는 클래스명을 가지고 있다면 true, 없다면 false
+        if($('.event_box3 .page_act').hasClass('on')){
             $('.event_box3 .page_act').removeClass('on');
             $('.card').slick('slickPause');
 
@@ -56,7 +50,7 @@
         e.preventDefault();
         if(!$('.event_box3 .page_act').hasClass('on')){
 
-            //! --> not   !! --> 긍정   
+  
         $('.event_box3 .page_act').addClass('on');
         $('.card').slick('slickPlay');
         }
